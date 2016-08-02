@@ -1,0 +1,86 @@
+//
+//  CartoonHeader.pch
+//  MiyaCartoon
+//
+//  Created by miya on 16/6/13.
+//  Copyright © 2016年 miya. All rights reserved.
+//
+
+#ifndef CartoonHeader_pch
+#define CartoonHeader_pch
+//漫画
+//更新
+#define GX_URL @"http://api.playsm.com/index.php?size=20&r=cartoonCategory/getCartoonSetListByCategory&id=20&page=%d&"
+
+//推荐
+#define TJ_URL @"http://api.playsm.com/index.php?size=20&r=cartoonBillBoard/getCartoonSetListByBillBoard&id=3&page=%d&"
+
+//热评
+#define RP_URL @"http://api.playsm.com/index.php?size=20&r=cartoonBillBoard/getCartoonSetListByBillBoard&id=4&page=%d&"
+
+//新作
+#define XZ_URL @"http://api.playsm.com/index.php?size=20&r=cartoonCategory/getCartoonSetListByCategory&id=21&page=%d&"
+
+//搜索
+#define SS_URL @"http://api.playsm.com/index.php?size=9&r=cartoonSet/list&page=1&searchName=%@&"
+
+//榜单
+#define TOP_URL @"http://api.playsm.com/index.php?size=10&r=cartoonBillBoard/list&page=1&"
+
+//人气榜
+#define RQB_URL @"http://api.playsm.com/index.php?size=12&r=cartoonBillBoard/getCartoonSetListByBillBoard&page=%d&id=%@&"
+
+//详情页面
+#define DETAIL_URL @"http://api.playsm.com/index.php?r=cartoonSet/detail&id=%@&"
+
+//下载链接
+#define DOWNLOAD_URL @"http://api.playsm.com/index.php?r=cartoonChapter/albumList&isSize=1&chapterId=%@&"
+
+//漫画阅读
+#define LOOK_URL @"http://api.playsm.com/index.php?size=10&orderType=1&r=cartoonChapter/albumList&page=1&isSize=1&chapterId=%@&"
+
+
+//漫画分类
+#define CATEGORY_URL @"http://api.playsm.com/index.php?size=999&r=cartoonCategory/list&page=1&"
+
+//分类点击
+#define CATEGORY_CLICK_URL @"http://api.playsm.com/index.php?size=12&r=cartoonCategory/getCartoonSetListByCategory&page=%@&id=%@&"
+
+
+//漫图
+//最新
+#define ZX_URL @"http://image.so.com/zj?ch=wallpaper&src=srp&listtype=new&t1=%@&sn=%d&pn=20"
+
+//番库
+#define FK_URL @"http://211.155.84.158/?build=1.0&appVersion=1&ch=wandou&openudid=865863024597523&screen=1536x2560&appName=single5&device=android&method=search&query=%@&type=album&offset=%d&limit=30"
+
+#define FKPIC_URL @"http://211.155.84.158/?build=1.0&appVersion=1&ch=wandou&openudid=865863024597523&screen=1536x2560&appName=single5&device=android&do_fav_userid=0&method=album.get&id=%@&offset=%d&limit=30"
+
+//精品
+#define JP_URL @"http://image.so.com/zj?ch=wallpaper&src=srp&listtype=hot&t1=%@&sn=%d&pn=20"
+
+//图片点击
+#define PICTURE_URL @"http://image.so.com/zvj?ch=wallpaper&src=srp&listtype=%@&pn=20&id=%@"
+
+//动漫分类
+#define DM_URL @"http://api.tv.moliv.cn/moli20/moli-tv/getvideo?page=%d&size=40&_channel=3&nav=%@&_tag=3&v=106&u=78015006-7e90-4f0b-bc3f-54434ecf6ccc&app=mthd&os=4.4.4&c=android&bt=1&vn=1.1.6&did=maca81b5a12e423&uid=maca81b5a12e423&vb=1.1.6(Official)&md=R8207&mc=Market_Wandoujia_HD&bd=msm8916&tv=0&bus=&vs=1&service=0&atd=1&"
+//动漫点击详情
+#define DMDTAILE_URL @"http://api.tv.moliv.cn/moli20/moli-tv/videointro-2?vid=%@&v=106&u=78015006-7e90-4f0b-bc3f-54434ecf6ccc&app=mthd&os=4.4.4&c=android&bt=1&vn=1.1.6&did=maca81b5a12e423&uid=maca81b5a12e423&vb=1.1.6(Official)&md=R8207&mc=Market_Wandoujia_HD&bd=msm8916&tv=0&bus=&vs=1&service=0&atd=1&"
+//选集
+#define XUANJI_URL @"http://api.tv.moliv.cn/moli20/moli-tv/sourcelist-2?cid=%@&v=106&u=78015006-7e90-4f0b-bc3f-54434ecf6ccc&app=mthd&os=4.4.4&c=android&bt=1&vn=1.1.6&did=maca81b5a12e423&uid=maca81b5a12e423&vb=1.1.6(Official)&md=R8207&mc=Market_Wandoujia_HD&bd=msm8916&tv=0&bus=&vs=1&service=0&atd=1&"
+
+//看此片的人还看
+#define HAIKAN_URL @"http://api.tv.moliv.cn/moli20/moli-tv/morevideo?vid=%@&size=6&v=106&u=78015006-7e90-4f0b-bc3f-54434ecf6ccc&app=mthd&os=4.4.4&c=android&bt=1&vn=1.1.6&did=maca81b5a12e423&uid=maca81b5a12e423&vb=1.1.6(Official)&md=R8207&mc=Market_Wandoujia_HD&bd=msm8916&tv=0&bus=&vs=1&service=0&atd=1&"
+//影片
+#define YP_URL @"http://api.tv.moliv.cn/moli20/moli-tv/sourceinfo-3?vid=%@&cid=%@&eid=%@&episode=%@&v=106&u=78015006-7e90-4f0b-bc3f-54434ecf6ccc&app=mthd&os=4.4.4&c=android&bt=1&vn=1.1.6&did=maca81b5a12e423&uid=maca81b5a12e423&vb=1.1.6(Official)&md=R8207&mc=Market_Wandoujia_HD&bd=msm8916&tv=0&bus=&vs=1&service=0&atd=1&"
+#define COLOR [UIColor colorWithRed:0.92 green:0.31 blue:0.22 alpha:1.00]
+#define BTNSIZE 50
+#define BTNHEIGHT 30
+#define PICTURE_PREFIX_URL @"http://tupian.nikankan.com"
+
+#define WIDTH [UIScreen mainScreen].bounds.size.width
+
+#define HEIGHT [UIScreen mainScreen].bounds.size.height
+
+#endif /* PrefixHeader_pch */
+
